@@ -1,0 +1,215 @@
+
+/* 
+Copyright (c) 2023 Promineo Tech
+Author:  Juan Mejia
+Subject:  Week 08 - Coding Assinment
+
+Coding Steps: 
+
+◙ Coding Steps:
+Style the website you made last week using CSS with the following requirements:
+- Use only external CSS file (no internal or inline styling)
+- Every element must be styled.
+- Create style rules using class, id, and element selectors.
+
+*/
+
+
+
+/* Universal Selectors */
+
+/* Element Selectors */
+
+html {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(180deg, #85b4c2, #7acaca63, #affffa, #ffffff);
+    border: 1px solid red;
+}
+
+body {
+    margin: 1rem 5rem;
+}
+
+h1 {
+    text-align: center;
+    filter: drop-shadow(2px 2px 1px #0f6a9e);
+}
+
+p,
+li {
+    font-size: 20px;
+}
+
+ol {
+    padding: 20px;
+}
+
+ol li {
+    padding: 10px 0;
+}
+
+img {
+    box-shadow: 5px 5px 4px rgba(189, 90, 90, 0.5);
+    border-radius: 1rem;
+    margin: 1rem;
+    
+}
+
+figcaption {
+    text-align: center;
+    color: rgb(28, 42, 44);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+/* Custom Class Name Selectors */
+
+#image1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#image2 {
+    max-width: 100%;
+    height: auto;
+}
+
+#image3 {
+    justify-content: center;
+    display: flex;
+    height: auto;
+}
+
+#image4 {
+    justify-content: center;
+    height: auto;
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 1500px) {
+    #image1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #image2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        margin: 1rem;
+        justify-content: center;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+    }
+
+    #image1 {
+        display: none;
+        justify-content: center;
+    }
+
+    #image2 {
+        display: none;
+        justify-content: center;
+    }
+
+    #image3 {
+        display: none;
+        justify-content: center;
+    }
+
+    #image4 {
+        display: display;
+        justify-content: center;
+
+    }
+}
+
+/* Additional Styles for the HTML Elements */
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive Image Styles */
+@media only screen and (max-width: 500px) {
+    img {
+        width: 100%;
+        justify-content: center;
+    }
+}
